@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<patients>
+  <template>
+    <fields>
+      <name class="required">name</name>
+      <name class="required graph">height</name>
+      <name class="required graph">weight</name>
+      <name class="">sex</name>
+    </fields>
+  </template>
+  <patient id="1">
+    <name>Jana Krišková</name>
+    <height>172</height>
+    <weight>56</weight>
+    <sex>female</sex>
+  </patient>
+  <patient id="2">
+    <name>Peter Uzmák</name>
+    <height>186</height>
+    <weight>93</weight>
+    <sex>male</sex>
+  </patient>
+  <patient id="3">
+    <name>Ján Peteraj</name>
+    <height>175</height>
+    <weight>85</weight>
+    <sex>male</sex>
+  </patient>
+  <patient id="4">
+    <name>Ivan Koptulič</name>
+    <height>215</height>
+    <weight>85</weight>
+    <sex>male2</sex>
+  </patient>
+  <patient id="5">
+    <name>Dagmar Sihlá</name>
+    <height>176</height>
+    <weight>76</weight>
+    <sex>female</sex>
+  </patient>
+</patients>

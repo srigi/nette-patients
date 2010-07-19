@@ -1,0 +1,33 @@
+{block content}
+
+    <a class="ico add" href="{link add}">Pridat pacienta</a>
+    <a class="fr" href="{plink Settings:}">Nastavenia</a>
+
+    <table>
+    {foreach $patients as $id => $patient}
+        {if $iterator->isFirst()}
+            <tr>
+                    {foreach $patient as $prop => $value}
+                        <th>{$prop}</th>
+                    {/foreach}
+                    <th>Edit</th>
+                    <th>Delete</th>
+            </tr>
+        {/if}
+        <tr>
+            {foreach $patient as $value}
+                <td>{$value}</td>
+            {/foreach}
+            <td><a class="icosmall edit" href="{link edit 'id'=>$id}"></a></td>
+            <td><a class="icosmall delete" href="{link delete 'id'=>$id}"></a></td>
+        </tr>
+    {/foreach}
+    </table>
+
+    <hr /><hr />
+
+    {foreach $graphs as $graph}
+        <img class="graph" src="/images/graphs/{$graph}.png" alt="" />
+    {/foreach}
+
+{/block}

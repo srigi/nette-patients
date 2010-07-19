@@ -1,0 +1,89 @@
+/* ----------------- */
+/*   SOME RESETzz    */
+/* ----------------- */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td
+{ border:0; font-family:inherit; font-size:100%; font-style:inherit; font-weight:inherit; margin:0; padding:0; outline:0; vertical-align:baseline; }
+
+body {background:white; color:black; line-height:1; }
+:focus { outline:0; } /* remember to define focus styles! */
+blockquote:before, blockquote:after, q:before, q:after { content:""; }
+blockquote, q { quotes:"" ""; }
+ol, ul { list-style:none; }
+table { border-collapse:separate; border-spacing:0; } /* tables still need 'cellspacing="0"' in the markup */
+caption, th, td { font-weight:normal; text-align:left; }
+
+
+/* ----------------- */
+/*  GENERAL classes  */
+/* ----------------- */
+.cleaner { border:0; clear:both; float:none; font-size:0; line-height:0; height:0; width:0;}
+
+.fl { float:left !important; }
+.fr { float:right !important; }
+
+.tal { text-align:left !important; }
+.tac { text-align:center !important; }
+.tar { text-align:right !important; }
+
+.vat { vertical-align:top !important; }
+.vam { vertical-align:middle !important; }
+.vab { vertical-align:bottom !important; }
+
+div.flash { background-color:#fff9d7; border:1px solid #e2c822; color:black; margin:1em 0; padding:1em; }
+
+
+/* ----------------- */
+/*  BASIC elements   */
+/* ----------------- */
+body { background-color:#fff; color:#000; font-family:'Trebuchet MS', 'Geneva CE', lucida, sans-serif; font-size:small; line-height:1.25; text-align:center; }
+
+a[href^="error:"] { background-color:red; color:white; padding:0.05em 0.2em; }
+a                 { color:#555; }
+a:hover           { color:#172c6e; }
+
+p      { clear:both; margin-bottom:1em; }
+strong { font-weight:bold; }
+small  { font-size:85%; line-height:1.470588235em; }
+ol     { list-style:decimal inside; margin:0 0 1em 2em; }
+ul     { list-style:disc outside; margin:0 0 1em 2em; }
+img    { vertical-align:middle; }
+
+h1 { color:#444; font-size:220%; font-weight:normal; margin:0 0 .25em; }
+h2 { color:#444; font-size:150%; font-weight:normal; margin:0 0 .45em; }
+h3 { color:#444; font-size:120%; font-weight:bold; margin:0 0 .45em; }
+
+input[type='submit'], input[type='image'], label[for], select, button, .pointer { cursor:pointer; /*cursor:hand;\*/ }
+
+table { clear:both; margin:0 0 1em; }
+table ,th, td { border:1px solid gray; }
+th, td { padding:0.25em 0.65em; }
+
+/* ----------------- */
+/*      LAYOUT       */
+/* ----------------- */
+#wrapper { margin:10px auto; width:960px; }
+#header, #content, #footer  { border:1px dashed #555; margin:5px 0; padding:1em 2em; text-align:left; }
+#header  { padding:2em; position:relative; }
+#content { overflow:hidden; padding:25px; position:relative; }
+#footer  { clear:both; color:gray; padding:2em; position:relative; text-align:center; }
+
+
+/* ----------------- */
+/*        ETC        */
+/* ----------------- */
+
+/** homelink **/
+#homelink { color:#44a; font-size:large; text-decoration:none; }
+#homelink:hover { text-decoration:underline; }
+
+/* content */
+#content a.ico { display:block; height:32px; width:32px; }
+#content a.ico.add { background:url('../images/ico_add.png') 0 0 no-repeat; float:left; font-weight:bold; line-height:30px; padding:0 0 0 45px; margin:0 0 1em; text-decoration:none; width:auto; }
+#content a#grefresh { background:url('../images/ico_refresh.png') 0 0 no-repeat; float:left; font-weight:bold; line-height:32px; padding:0 0 0 36px; margin:0 0 1em; text-decoration:none; }
+
+#content a.icosmall { display:block; height:16px; width:16px; }
+#content a.icosmall.edit { background:url('../images/ico_edit_small.png') 0 0 no-repeat; }
+#content a.icosmall.delete { background:url('../images/ico_delete_small.png') 0 0 no-repeat; }
+
+#frm-formGraphsSettings table, #frm-formGraphsSettings th, #frm-formGraphsSettings td { border:none; }
+#content img.graph { float:left; margin:0.8em 0 0; }
